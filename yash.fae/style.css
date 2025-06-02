@@ -1,0 +1,131 @@
+/* Reset + Body */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 3em 1em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.8em 1.5em;
+    background: white;
+    color: #2575fc;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #eee;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+/* Image */
+.profile-img {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 1em auto;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .profile-img {
+        width: 150px;
+    }
+
+    .btn {
+        padding: 0.6em 1.2em;
+    }
+}
+
+/* Horror Stories Section */
+#horror-stories {
+    background: #222;
+    color: #eee;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px crimson;
+}
+
+#horror-stories h2 {
+    text-align: center;
+    color: #ff4444;
+    font-family: 'Creepster', cursive;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+
+.story {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border-left: 5px solid #ff4444;
+    background: #330000;
+    border-radius: 8px;
+}
+
+.story h3 {
+    margin-top: 0;
+    color: #ff6666;
+}
+
+.story p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
